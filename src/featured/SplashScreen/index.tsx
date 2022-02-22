@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import {useSelector} from 'react-redux';
-import {Logo} from '../../assets/image';
+import {IcLogo} from '../../assets/image';
 import {RootState} from '../../shared/redux/rootReducer';
 import Colors from '../../shared/styles/colors';
 import {Font, Size} from '../../shared/styles/fonts';
@@ -16,7 +16,7 @@ const SplashScreen = ({navigation}: any) => {
   }, []);
   return (
     <View style={styles.page}>
-      <Image source={Logo} style={styles.logo} />
+      <Image source={IcLogo} style={styles.logo} />
       <Text style={styles.title}>Book List</Text>
     </View>
   );

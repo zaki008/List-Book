@@ -11,9 +11,9 @@ import {Size} from '../../../styles/fonts';
 
 interface ButtonProps {
   type: string;
-  title: String;
+  title: string;
   kind: string;
-  onPress(): void;
+  onPress: () => void;
   contentStyle?: ViewStyle[] | any;
 }
 

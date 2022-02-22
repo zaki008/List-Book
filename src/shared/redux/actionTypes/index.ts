@@ -11,6 +11,7 @@ export const REGISTER_FAILED = 'REGISTER_FAILED';
 export const BOOKS = 'BOOKS';
 export const BOOKS_SUCCESS = 'BOOKS_SUCCESS';
 export const BOOKS_FAILED = 'BOOKS_FAILED';
+export const SETBOOK = 'SET_BOOK';
 
 export const BOOK_DETAIL = 'BOOK_DETAIL';
 export const BOOK_DETAIL_SUCCESS = 'BOOK_DETAIL_SUCCESS';

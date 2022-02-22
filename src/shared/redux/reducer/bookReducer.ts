@@ -7,6 +7,7 @@ import {
   BOOK_DETAIL,
   BOOK_DETAIL_FAILED,
   BOOK_DETAIL_SUCCESS,
+  SETBOOK,
 } from '../actionTypes';
 
 const initialState = {
@@ -22,6 +23,12 @@ const bookReducer = (state = initialState, action: Effect) => {
       return {
         ...state,
         isLoading: true,
+      };
+    }
+    case SETBOOK: {
+      return {
+        ...state,
+        books: action.payload,
       };
     }
     case BOOKS_SUCCESS: {

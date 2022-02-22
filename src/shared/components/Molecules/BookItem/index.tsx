@@ -9,7 +9,7 @@ interface BookItem {
   price: number;
   image: string;
   type: string;
-  onPress(): void;
+  onPress: () => void;
 }
 
 const BookItem = ({

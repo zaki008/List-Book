@@ -9,28 +9,42 @@ interface SearchProps {
   onChangeText: any;
   name: string;
   onPress?: () => void;
+  onReset?: () => void;
 }
 
-const Search = ({onChangeText, value, onPress}: SearchProps) => {
+const Search = ({onChangeText, value, onPress, onReset}: SearchProps) => {
   return (
     <View style={styles.inputWrapper}>
       <TextInput
         onChangeText={onChangeText}
         value={value}
         style={styles.input}
-        placeholder="Search..."
+        placeholder="Search"
       />
       <Button
         contentStyle={[
           {
             backgroundColor: Colors.green1,
             color: Colors.white,
-            paddingHorizontal: 5,
-            fontSize: Size.medium,
+            paddingHorizontal: 3,
+            fontSize: Size.regular,
+            marginRight: 6,
           },
         ]}
         title={'Search'}
         onPress={onPress}
+      />
+      <Button
+        contentStyle={[
+          {
+            backgroundColor: Colors.red1,
+            color: Colors.white,
+            paddingHorizontal: 3,
+            fontSize: Size.regular,
+          },
+        ]}
+        title={'Reset'}
+        onPress={onReset}
       />
     </View>
   );
@@ -49,12 +63,12 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: Colors.gray1,
     borderRadius: 8,
-    paddingHorizontal: 16,
+    paddingHorizontal: 12,
     fontFamily: Font.primary[400],
     color: Colors.green1,
     fontSize: Size.input,
     paddingVertical: 8,
-    width: 250,
+    width: 200,
     marginRight: 20,
   },
 });

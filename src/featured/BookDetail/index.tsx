@@ -1,13 +1,7 @@
 import React, {useEffect} from 'react';
 import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
-import {
-  ContentDetail,
-  Gap,
-  Header,
-  Loading,
-  Search,
-} from '../../shared/components';
+import {ContentDetail, Gap, Header, Loading} from '../../shared/components';
 import {BookState} from '../../shared/interface';
 import {bookDetailAction} from '../../shared/redux/actionTypes';
 import {RootState} from '../../shared/redux/rootReducer';

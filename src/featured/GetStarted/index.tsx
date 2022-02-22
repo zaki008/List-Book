@@ -1,20 +1,16 @@
 import React from 'react';
 import {Image, ImageBackground, StyleSheet, Text, View} from 'react-native';
-import {BG, Logo} from '../../assets/image';
+import {BG, IcLogo} from '../../assets/image';
 import {Gap, Button} from '../../shared/components';
 import Colors from '../../shared/styles/colors';
 import {Size} from '../../shared/styles/fonts';
 
-interface GetStarted {
-  navigation: any;
-}
-
-const GetStarted = ({navigation}: GetStarted) => {
+const GetStarted = ({navigation}: any) => {
   return (
     <ImageBackground source={BG} style={styles.page}>
       <View>
         <View style={styles.containerLogo}>
-          <Image source={Logo} style={styles.logo} />
+          <Image source={IcLogo} style={styles.logo} />
         </View>
         <Text style={styles.title}>
           List-list buku favorit anda tersedia disini

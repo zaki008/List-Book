@@ -1,6 +1,6 @@
-import axios, {AxiosResponse} from 'axios';
-import {PayloadLogin, PayloadRegister} from '../../interface';
-import API_ENDPOINT from '../globals/api-endpoint';
+// import axios, {AxiosResponse} from 'axios';
+// import {PayloadLogin, PayloadRegister} from '../../interface';
+// import API_ENDPOINT from '../globals/api-endpoint';
 
 export interface ReturnContract {
   tokens: {
@@ -23,21 +23,21 @@ export interface ReturnContract {
   message: string;
 }
 
-interface LoginService {
-  (data: PayloadLogin): Promise<AxiosResponse<ReturnContract>>;
-}
+// interface LoginService {
+//   (data: PayloadLogin): Promise<AxiosResponse<ReturnContract>>;
+// }
 
-interface RegisterService {
-  (data: PayloadRegister): Promise<AxiosResponse<ReturnContract>>;
-}
+// interface RegisterService {
+//   (data: PayloadRegister): Promise<AxiosResponse<ReturnContract>>;
+// }
 
-export const login: LoginService = async (data: PayloadLogin) => {
-  return await axios.post(API_ENDPOINT.login, data);
-};
+// export const login: LoginService = async (data: PayloadLogin) => {
+//   return await axios.post(API_ENDPOINT.login, data);
+// };
 
-export const register: RegisterService = async (data: PayloadRegister) => {
-  return await axios.post(API_ENDPOINT.register, data);
-};
+// export const register: RegisterService = async (data: PayloadRegister) => {
+//   return await axios.post(API_ENDPOINT.register, data);
+// };
 
 // const AuthIb = {
 //   register: async (data: object) => axios.post(API_ENDPOINT.register, data),

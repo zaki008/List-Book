@@ -27,14 +27,13 @@ type RegisterServiceResponse = SagaReturnType<typeof registerApi>;
 function* login(action: Effect) {
   try {
     const resLogin: LoginServiceResponse = yield call(loginApi, action.payload);
+    console.log(resLogin);
     if (resLogin) {
       let {token} = resLogin.tokens.access;
       showSuccess('Anda Berhasil Login');
       yield storeData(token);
       yield put({type: LOGIN_SUCCESS});
     } else {
-      let {errors} = resLogin;
-      showError(errors);
       yield put({type: LOGIN_FAILED});
     }
   } catch (err) {
@@ -52,7 +51,7 @@ function* register(action: Effect) {
     if (res) {
       showSuccess(`you have successfully registered, ${res.message}`);
       yield put({type: REGISTER_SUCCESS});
-      RootNavigation.navigate('Login');
+      RootNavigation.navigate('Login' as never, {} as never);
     } else {
       yield put({type: REGISTER_FAILED});
     }

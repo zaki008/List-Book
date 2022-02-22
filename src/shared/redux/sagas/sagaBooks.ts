@@ -23,9 +23,7 @@ type GetBookByIdServiceResponse = SagaReturnType<typeof getBookByIdApi>;
 function* getBooks() {
   try {
     const token: string = yield getData();
-    console.log(token);
     const res: GetBookServiceResponse = yield call(getBooksApi, token);
-    console.log('book', res);
     if (res && res.results) {
       yield put({type: BOOKS_SUCCESS, payload: res.results});
     } else {
