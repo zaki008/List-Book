@@ -13,7 +13,7 @@ const GetStarted = ({navigation}: any) => {
           <Image source={IcLogo} style={styles.logo} />
         </View>
         <Text style={styles.title}>
-          List-list buku favorit anda tersedia disini
+          List-list buku favorit anda tersedia disini semua
         </Text>
       </View>
       <View>
