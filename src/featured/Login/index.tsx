@@ -29,7 +29,7 @@ const Login = ({navigation}: any) => {
       <View style={styles.wrapper}>
         <Image source={Avatar} style={styles.avatar} />
         <Text style={styles.welcome}>Welcome Book</Text>
-        <Text style={styles.desc}>Sign to Continue lanjut</Text>
+        <Text style={styles.desc}>Sign to Continue Lanjut</Text>
       </View>
       <Gap height={40} />
       <Input
