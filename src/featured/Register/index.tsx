@@ -46,7 +46,7 @@ const Register = ({navigation}: any) => {
           onPress={() => navigation.navigate('Login')}
         />
         <View style={styles.content}>
-          <Text style={styles.title}>Create Account</Text>
+          <Text style={styles.title}>Create Account Sekarang Juga</Text>
           <Text style={styles.desc}>Create a new account</Text>
           <Gap height={20} />
           <Input
