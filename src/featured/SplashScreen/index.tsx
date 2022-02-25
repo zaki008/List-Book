@@ -17,7 +17,7 @@ const SplashScreen = ({navigation}: any) => {
   return (
     <View style={styles.page}>
       <Image source={IcLogo} style={styles.logo} />
-      <Text style={styles.title}>Book List</Text>
+      <Text style={styles.title}>Book List ada disini</Text>
     </View>
   );
 };
